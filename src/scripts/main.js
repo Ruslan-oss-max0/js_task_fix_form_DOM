@@ -1,6 +1,6 @@
 'use strict';
 
-const inputsList = document.querySelectorAll('input');
+const inputsList = document.querySelectorAll('form input');
 
 inputsList.forEach((input) => {
   const inputLabel = document.createElement('label');
@@ -8,8 +8,6 @@ inputsList.forEach((input) => {
   inputLabel.className = 'field-label';
   inputLabel.textContent = input.name;
   inputLabel.htmlFor = input.id;
-
-  inputLabel.textContent = input.name;
 
   input.parentNode.insertBefore(inputLabel, input);
 
