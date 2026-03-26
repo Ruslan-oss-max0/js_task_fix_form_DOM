@@ -3,13 +3,13 @@
 const inputsList = document.querySelectorAll('form input');
 
 inputsList.forEach((input) => {
-  const inputLabel = document.createElement('label');
+  const label = document.createElement('label');
 
-  inputLabel.className = 'field-label';
-  inputLabel.textContent = input.name;
-  inputLabel.htmlFor = input.id;
+  label.className = 'field-label';
+  label.textContent = input.name;
+  label.htmlFor = input.id;
 
-  input.parentNode.insertBefore(inputLabel, input);
+  input.parentNode.insertBefore(label, input);
 
   const firstletter = input.name[0].toUpperCase();
 
